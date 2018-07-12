@@ -1,6 +1,6 @@
 {
-  "name": "pro",
-  "app_id": "",
+  "name": "ionic-first-look",
+  "app_id": "c83609f2",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
