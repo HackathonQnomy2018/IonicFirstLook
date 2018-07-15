@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "ionic-first-look",
+  },
+  "apps": [{
+    "root": "src",
+    "tsconfig": "tsconfig.app.json",
+    "prefix": "app",
+  }],
+  "defaults": {
+    "styleExt": "scss",
+    "component": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    },
+    "module": {
+      "spec": false
+    },
+    "class": {
+      "spec": false
+    },
+    "directive": {
+      "spec": false
+    },
+    "guard": {
+      "spec": false
+    },
+    "interface": {
+      "prefix": "I"
+    },
+    "pipe": {
+      "spec": false
+    }
+  }
+}
