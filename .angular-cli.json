@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ionic-first-look",
+    "name": "ionic-first-look"
   },
   "apps": [{
     "root": "src",
     "tsconfig": "tsconfig.app.json",
-    "prefix": "app",
+    "prefix": "app"
   }],
   "defaults": {
     "styleExt": "scss",
