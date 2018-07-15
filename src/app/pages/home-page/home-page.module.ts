@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { HomeLayerComponent } from "./home-layer.component";
+import { HomePageComponent } from "./home-page.component";
 import { IonicModule } from "ionic-angular";
 
 @NgModule({
   imports: [CommonModule, IonicModule],
-  declarations: [HomeLayerComponent],
-  exports: [HomeLayerComponent]
+  declarations: [HomePageComponent],
+  exports: [HomePageComponent]
 })
-export class HomeLayerModule {}
+export class HomePageModule {}
