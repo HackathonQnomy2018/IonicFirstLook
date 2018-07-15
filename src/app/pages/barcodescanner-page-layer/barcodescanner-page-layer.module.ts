@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BarcodescannerPageLayerComponent } from './barcodescanner-page-layer.component';
+import { IonicModule } from 'ionic-angular';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [IonicModule],
   declarations: [BarcodescannerPageLayerComponent]
 })
-export class BarcodescannerPageLayerModule { }
+export class BarcodescannerPageLayerModule {}

@@ -3,11 +3,7 @@ import { IonicPageModule } from 'ionic-angular';
 import { BarcodescannerPage } from './barcodescanner';
 
 @NgModule({
-  declarations: [
-    BarcodescannerPage,
-  ],
-  imports: [
-    IonicPageModule.forChild(BarcodescannerPage),
-  ],
+  imports: [IonicPageModule.forChild(BarcodescannerPage)],
+  declarations: [BarcodescannerPage]
 })
 export class BarcodescannerPageModule {}

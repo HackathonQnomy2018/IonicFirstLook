@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { AuthPageLayerComponent } from './auth-page-layer.component';
+import { IonicModule } from 'ionic-angular';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [IonicModule],
   declarations: [AuthPageLayerComponent]
 })
-export class AuthPageLayerModule { }
+export class AuthPageLayerModule {}

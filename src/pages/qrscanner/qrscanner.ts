@@ -10,16 +10,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-qr-scanner',
-  templateUrl: 'qr-scanner.html',
+  selector: 'page-qrscanner',
+  templateUrl: 'qrscanner.html'
 })
 export class QrScannerPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QrScannerPage');
   }
-
 }

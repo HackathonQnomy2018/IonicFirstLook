@@ -3,17 +3,22 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePageModule } from '../pages/home/home.module';
+import { QrScannerPageModule } from '../pages/qrscanner/qrscanner.module';
 
 @NgModule({
-  declarations: [MyApp, ListPage],
-  imports: [BrowserModule, IonicModule.forRoot(MyApp), HomePageModule],
+  declarations: [MyApp],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
+    HomePageModule,
+    QrScannerPageModule
+  ],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp, ListPage],
+  entryComponents: [MyApp],
   providers: [
     StatusBar,
     SplashScreen,
