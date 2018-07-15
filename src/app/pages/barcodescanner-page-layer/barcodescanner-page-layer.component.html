@@ -1,3 +1,47 @@
 <p>
   barcodescanner-page-layer works!
 </p>
+
+<ion-item>
+  <ion-input type="text" placeholder="MY QR Code data" [(ngModel)]="qrData">
+  </ion-input>
+</ion-item>
+
+
+<button ion-button full icon-left (click)="createCode()">
+
+  <ion-icon name="barcode"></ion-icon>
+
+  <span [innerText]="'Create Code'"></span>
+
+</button>
+
+<button ion-button full icon-left (click)="scanCode()" color="secondary">
+
+  <ion-icon name="qr-scanner"></ion-icon>
+
+  <span [innerText]="'Scan Code'"></span>
+
+</button>
+
+<ion-card *ngIf="createdCode">
+
+  <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+
+  <ion-card-content>
+
+    <p [innerText]="'Value: ' + createdCode"></p>
+
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card *ngIf="scannedCode">
+
+  <ion-card-content>
+
+    <p [innerText]="'Result from Scan: ' + scannedCode"></p>
+
+  </ion-card-content>
+
+</ion-card>
