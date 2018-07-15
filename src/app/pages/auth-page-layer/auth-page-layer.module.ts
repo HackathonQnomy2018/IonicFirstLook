@@ -4,6 +4,7 @@ import { IonicModule } from 'ionic-angular';
 
 @NgModule({
   imports: [IonicModule],
-  declarations: [AuthPageLayerComponent]
+  declarations: [AuthPageLayerComponent],
+  exports: [AuthPageLayerComponent]
 })
 export class AuthPageLayerModule {}

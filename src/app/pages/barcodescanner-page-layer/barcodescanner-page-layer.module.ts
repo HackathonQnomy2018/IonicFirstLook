@@ -4,6 +4,7 @@ import { IonicModule } from 'ionic-angular';
 
 @NgModule({
   imports: [IonicModule],
-  declarations: [BarcodescannerPageLayerComponent]
+  declarations: [BarcodescannerPageLayerComponent],
+  exports: [BarcodescannerPageLayerComponent]
 })
 export class BarcodescannerPageLayerModule {}

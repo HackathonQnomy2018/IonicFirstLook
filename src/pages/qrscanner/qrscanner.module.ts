@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { QrScannerPage } from './qrscanner';
 import { QrscannerPageLayerModule } from '../../app/pages/qrscanner-page-layer/qrscanner-page-layer.module';
-import { LayoutModule } from '../../app/layout/layout.module';
+import { QfNavbarModule } from '../../app/layout/qf-navbar/qf-navbar.module';
 
 @NgModule({
   imports: [
     IonicPageModule.forChild(QrScannerPage),
-    LayoutModule,
-    QrscannerPageLayerModule
+    QrscannerPageLayerModule,
+    QfNavbarModule
   ],
-  declarations: [QrScannerPage]
+  declarations: [QrScannerPage],
+  exports: [QrScannerPage]
 })
 export class QrScannerPageModule {}

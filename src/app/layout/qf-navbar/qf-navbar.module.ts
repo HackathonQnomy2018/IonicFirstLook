@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { QfNavbarComponent } from './qf-navbar.component';
-import { IonicModule } from 'ionic-angular/umd';
+import { IonicModule } from 'ionic-angular';
 
 @NgModule({
-  imports: [CommonModule, IonicModule],
+  imports: [IonicModule],
   declarations: [QfNavbarComponent],
-  exports: [CommonModule, QfNavbarComponent]
+  exports: [QfNavbarComponent]
 })
 export class QfNavbarModule {}

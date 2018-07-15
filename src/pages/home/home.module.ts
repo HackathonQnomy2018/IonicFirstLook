@@ -7,8 +7,8 @@ import { QfNavbarModule } from '../../app/layout/qf-navbar/qf-navbar.module';
 @NgModule({
   imports: [
     IonicPageModule.forChild(HomePage),
-    QfNavbarModule,
-    HomePageLayerModule
+    HomePageLayerModule,
+    QfNavbarModule
   ],
   declarations: [HomePage]
 })

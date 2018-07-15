@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { QrscannerPageLayerComponent } from './qrscanner-page-layer.component';
-import { IonicModule } from 'ionic-angular/umd';
+import { IonicModule } from 'ionic-angular';
 
 @NgModule({
   imports: [IonicModule],
